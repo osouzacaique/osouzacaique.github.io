@@ -1,168 +1,603 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Caique Souza | Portfólio</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Caique Souza - Desenvolvedor Full Stack com +6 anos de experiência em PHP, JavaScript e tecnologias cloud."
+    />
+    <meta
+      name="keywords"
+      content="desenvolvedor, full stack, PHP, JavaScript, React, Node.js, portfolio"
+    />
+    <meta name="author" content="Caique Souza" />
+    <title>Caique Souza | Portfólio</title>
 
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-      color: #333;
-      line-height: 1.6;
-    }
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://caiquesr.dev/" />
+    <meta
+      property="og:title"
+      content="Caique Souza | Desenvolvedor Full Stack"
+    />
+    <meta
+      property="og:description"
+      content="+6 anos de experiência em PHP, JavaScript e tecnologias cloud"
+    />
 
-    header {
-      background-color: #1f2937;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Caique Souza | Desenvolvedor Full Stack"
+    />
+    <meta
+      property="twitter:description"
+      content="+6 anos de experiência em PHP, JavaScript e tecnologias cloud"
+    />
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    section {
-      margin-bottom: 40px;
-    }
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-    h2 {
-      color: #4a90e2;
-      margin-bottom: 10px;
-    }
-
-    ul.tech-list {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    ul.tech-list li {
-      background-color: #e0e0e0;
-      padding: 8px 12px;
-      border-radius: 6px;
-    }
-
-    .project {
-      border: 1px solid #ddd;
-      padding: 16px;
-      border-radius: 8px;
-      background-color: white;
-      margin-bottom: 16px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1f2937;
-      color: white;
-      font-size: 0.9em;
-    }
-
-    a {
-      color: #4a90e2;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8em;
-      }
-
-      ul.tech-list {
-        flex-direction: column;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Caique Souza</h1>
-    <p>Desenvolvedor Web | +6 anos de experiência | Presidente Prudente - SP</p>
-  </header>
-
-  <main>
-    <section id="sobre">
-      <h2>👋 Sobre mim</h2>
-      <p>
-        Sou um desenvolvedor apaixonado por resolver problemas reais com tecnologia. Tenho experiência com PHP, JavaScript, PostgreSQL, Docker e atualmente lidero uma equipe de desenvolvimento. Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente.
-      </p>
-    </section>
-
-    <section id="stack">
-      <h2>🛠️ Stack Principal</h2>
-      <ul class="tech-list">
-        <li>PHP</li>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>PostgreSQL</li>
-        <li>Docker</li>
-        <li>Linux</li>
-      </ul>
-
-      <h3 style="margin-top: 20px;">🚀 Experiência adicional com:</h3>
-      <ul class="tech-list">
-        <li>React</li>
-        <li>Node.js</li>
-        <li>NestJS</li>
-        <li>Next.js</li>
-        <li>Firebase</li>
-        <li>AWS</li>
-        <li>MySQL</li>
-        <li>Python</li>
-        <li>OracleDB</li>
-        <li>Firebird</li>
-      </ul>
-    </section>
-
-    <section id="projetos">
-      <h2>📂 Projetos</h2>
-
-      <div class="project">
-        <h3>Vendix</h3>
-        <p>Sistema de vendas simples para pequenos empreendedores, com controle de produtos, clientes e relatórios básicos.</p>
-        <p><em>Em desenvolvimento.</em></p>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navegação -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span class="logo-text">Caique<span class="accent">Souza</span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Início</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projetos</a></li>
+          <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
+    </nav>
 
-      <!-- Adicione mais projetos aqui -->
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div id="particles-js"></div>
+      <div class="hero-container">
+        <div
+          class="hero-content"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h1>Meu Portifólio</h1>
+          <p class="subtitle typing-effect">Desenvolvedor Full Stack</p>
+          <p class="description">
+            +6 anos de experiência criando soluções web modernas e escaláveis.
+            Especialista em PHP, JavaScript e tecnologias cloud.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i>
+              Ver Projetos
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i>
+              Contato
+            </a>
+          </div>
+        </div>
+        <div
+          class="hero-image"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <div class="profile-card">
+            <div class="profile-image">
+              <img
+                id="github-avatar"
+                src=""
+                alt="Caique Souza"
+                style="display: none"
+              />
+              <div id="avatar-fallback" class="avatar-fallback">
+                <i class="fas fa-user"></i>
+              </div>
+            </div>
+            <h3>Caique Souza</h3>
+            <p>Tech Lead & Developer</p>
+            <div class="social-links">
+              <a
+                href="https://github.com/osouzacaique"
+                target="_blank"
+                class="social-link"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="mailto:cs.rib8@gmail.com"
+                class="social-link"
+                aria-label="Email"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/caiquesr"
+                target="_blank"
+                class="social-link"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contato">
-      <h2>📬 Contato</h2>
-      <p>📧 <a href="mailto:cs.rib8@gmail.com">cs.rib8@gmail.com</a></p>
-      <p>🔗 <a href="https://github.com/osouzacaique" target="_blank">GitHub</a></p>
-      <p>🔗 <a href="LINK-DO-PORTFOLIO-AQUI" target="_blank">Portfólio completo</a> (em breve)</p>
+    <!-- Sobre -->
+    <section id="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Sobre Mim</h2>
+          <p>Conheça mais sobre minha trajetória e experiências</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+            <p>
+              Sou um desenvolvedor apaixonado por resolver problemas reais com
+              tecnologia. Com mais de 6 anos de experiência, atualmente lidero
+              uma equipe de desenvolvimento e tenho expertise em criar soluções
+              web robustas e escaláveis.
+            </p>
+            <p>
+              Minha jornada começou com curiosidade sobre como as coisas
+              funcionam e evoluiu para uma carreira focada em inovação e
+              excelência técnica. Estou sempre em busca de novos desafios e
+              oportunidades para crescer profissionalmente.
+            </p>
+            <p>
+              Localizado em Presidente Prudente - SP, trabalho tanto com equipes
+              locais quanto remotas, sempre mantendo o foco na qualidade e na
+              entrega de valor.
+            </p>
+          </div>
+          <div class="about-stats" data-aos="fade-left" data-aos-delay="400">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="500">
+              <span class="stat-number">6</span>
+              <span class="stat-label">Anos de Experiência</span>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="600">
+              <span class="stat-number">50</span>
+              <span class="stat-label">Projetos Concluídos</span>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="700">
+              <span class="stat-number">15</span>
+              <span class="stat-label">Tecnologias</span>
+            </div>
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="800">
+              <span class="stat-number">Tech</span>
+              <span class="stat-label">Lead Atual</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  </main>
 
-  <footer>
-    &copy; 2025 Caique Souza. Todos os direitos reservados.
-  </footer>
-</body>
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Minhas Skills</h2>
+          <p>Tecnologias e ferramentas que domino</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <ul class="tech-list">
+              <li><i class="fab fa-php"></i> PHP</li>
+              <li><i class="fab fa-node-js"></i> Node.js</li>
+              <li><i class="fas fa-code"></i> NestJS</li>
+              <li><i class="fab fa-python"></i> Python</li>
+              <li><i class="fas fa-exchange-alt"></i> REST APIs</li>
+              <li><i class="fas fa-project-diagram"></i> GraphQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+            <ul class="tech-list">
+              <li><i class="fab fa-js-square"></i> JavaScript</li>
+              <li><i class="fab fa-react"></i> React</li>
+              <li><i class="fas fa-layer-group"></i> Next.js</li>
+              <li><i class="fab fa-html5"></i> HTML5</li>
+              <li><i class="fab fa-css3-alt"></i> CSS3</li>
+              <li><i class="fas fa-code"></i> TypeScript</li>
+            </ul>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+            <h3><i class="fas fa-database"></i> Banco de Dados</h3>
+            <ul class="tech-list">
+              <li><i class="fas fa-elephant"></i> PostgreSQL</li>
+              <li><i class="fas fa-database"></i> MySQL</li>
+              <li><i class="fas fa-table"></i> OracleDB</li>
+              <li><i class="fas fa-fire"></i> Firebird</li>
+              <li><i class="fab fa-google"></i> Firebase</li>
+              <li><i class="fas fa-memory"></i> Redis</li>
+            </ul>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+            <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+            <ul class="tech-list">
+              <li><i class="fab fa-docker"></i> Docker</li>
+              <li><i class="fab fa-aws"></i> AWS</li>
+              <li><i class="fab fa-linux"></i> Linux</li>
+              <li><i class="fas fa-sync-alt"></i> CI/CD</li>
+              <li><i class="fab fa-git-alt"></i> Git</li>
+              <li><i class="fas fa-server"></i> Nginx</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Meus Projetos</h2>
+          <p>Alguns dos projetos que desenvolvi</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-header">
+              <h3 class="project-title">Vendix</h3>
+              <span class="project-status">Em Desenvolvimento</span>
+            </div>
+            <p class="project-description">
+              Sistema de vendas completo para pequenos empreendedores, com
+              controle de produtos, clientes, vendas e relatórios detalhados.
+              Interface moderna e intuitiva.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Demo
+              </a>
+              <a
+                href="https://github.com/osouzacaique"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-header">
+              <h3 class="project-title">Sistema ERP</h3>
+              <span class="project-status">Concluído</span>
+            </div>
+            <p class="project-description">
+              Sistema de gestão empresarial completo, incluindo módulos de
+              vendas, estoque, financeiro e recursos humanos. Desenvolvido para
+              empresas de médio porte.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Ver Mais
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-header">
+              <h3 class="project-title">API Gateway</h3>
+              <span class="project-status">Concluído</span>
+            </div>
+            <p class="project-description">
+              Gateway de APIs para microserviços com autenticação, rate
+              limiting, cache e monitoramento. Desenvolvido com Node.js e
+              implementado em containers Docker.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">AWS</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/osouzacaique"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-header">
+              <h3 class="project-title">Dashboard Analytics</h3>
+              <span class="project-status">Concluído</span>
+            </div>
+            <p class="project-description">
+              Dashboard interativo para análise de dados empresariais com
+              gráficos em tempo real, filtros avançados e exportação de
+              relatórios. Interface responsiva e moderna.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Chart.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Demo
+              </a>
+              <a
+                href="https://github.com/osouzacaique"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Vamos Conversar?</h2>
+          <p>Entre em contato para discutir projetos e oportunidades</p>
+        </div>
+        <div class="contact-content-single">
+          <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+            <h3>Informações de Contato</h3>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:cs.rib8@gmail.com">cs.rib8@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <h4>LinkedIn</h4>
+                <a href="https://linkedin.com/in/caiquesr" target="_blank"
+                  >linkedin.com/in/caiquesr</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/caiquesr" target="_blank"
+                  >github.com/caiquesr</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Localização</h4>
+                <p>Presidente Prudente - SP</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Disponibilidade</h4>
+                <p>Segunda à Sexta: 8h às 18h</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="mailto:cs.rib8@gmail.com"
+                class="social-link"
+                title="Email"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/caiquesr"
+                class="social-link"
+                title="LinkedIn"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/caiquesr"
+                class="social-link"
+                title="GitHub"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://wa.me/5518999999999"
+                class="social-link"
+                title="WhatsApp"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Início</a>
+          <a href="#about" class="footer-link">Sobre</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projetos</a>
+          <a href="#contact" class="footer-link">Contato</a>
+        </div>
+        <p class="footer-text">
+          &copy; 2025 Caique Souza. Todos os direitos reservados.
+        </p>
+        <p class="footer-text">Desenvolvido com ❤️ e muito ☕</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      // Inicializar AOS
+      AOS.init({
+        duration: 800,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 100,
+      });
+
+      // Configurar Particles.js
+      if (window.particlesJS) {
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 80,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#6366f1",
+            },
+            shape: {
+              type: "circle",
+            },
+            opacity: {
+              value: 0.1,
+              random: false,
+            },
+            size: {
+              value: 3,
+              random: true,
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#6366f1",
+              opacity: 0.1,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 2,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse",
+              },
+              onclick: {
+                enable: true,
+                mode: "push",
+              },
+              resize: true,
+            },
+            modes: {
+              grab: {
+                distance: 400,
+                line_linked: {
+                  opacity: 1,
+                },
+              },
+              bubble: {
+                distance: 400,
+                size: 40,
+                duration: 2,
+                opacity: 8,
+                speed: 3,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+              push: {
+                particles_nb: 4,
+              },
+              remove: {
+                particles_nb: 2,
+              },
+            },
+          },
+          retina_detect: true,
+        });
+      }
+    </script>
+  </body>
 </html>
