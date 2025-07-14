@@ -206,28 +206,34 @@ function initTypingEffect() {
         const currentText = texts[textIndex];
 
         if (isDeleting) {
-            typingElement.textContent = currentText.substring(0, charIndex - 1);
+            // Ao deletar, manter pelo menos um espaço para preservar altura
+            const newText = currentText.substring(0, charIndex - 1);
+            typingElement.textContent = newText || "\u00A0"; // Espaço não-quebrável
             charIndex--;
         } else {
             typingElement.textContent = currentText.substring(0, charIndex + 1);
             charIndex++;
         }
 
-        let typeSpeed = isDeleting ? 50 : 100;
+        let typeSpeed = isDeleting ? 75 : 100;
 
         if (!isDeleting && charIndex === currentText.length) {
-            typeSpeed = 2000;
+            typeSpeed = 2000; // Pausa após completar o texto
             isDeleting = true;
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             textIndex = (textIndex + 1) % texts.length;
-            typeSpeed = 500;
+            typeSpeed = 300; // Pausa antes de iniciar novo texto
         }
 
         setTimeout(typeText, typeSpeed);
     }
 
-    typeText();
+    // Inicializar com o primeiro texto
+    typingElement.textContent = texts[0].charAt(0);
+    charIndex = 1;
+
+    setTimeout(typeText, 500); // Delay inicial
 }
 
 // Formulário de contato
