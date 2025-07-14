@@ -1125,6 +1125,44 @@ body.menu-open {
     box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
 }
 
+/* Efeito de digitação estabilizado */
+.typing-effect {
+    min-height: 1.8em;
+    display: inline-block;
+    position: relative;
+    line-height: 1.8;
+    overflow: hidden;
+    width: auto;
+    max-width: 100%;
+}
+
+.typing-effect::after {
+    content: "|";
+    color: var(--primary-color);
+    animation: blink 1s infinite;
+    position: absolute;
+    margin-left: 2px;
+}
+
+.subtitle.typing-effect {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin: 1rem 0 1.5rem 0;
+    text-align: left;
+}
+
+@keyframes blink {
+    0%,
+    50% {
+        opacity: 1;
+    }
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
 /* Responsivo */
 
 /* Tablets e notebooks pequenos (1024px - 1366px) */
