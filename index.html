@@ -5,21 +5,164 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caique Souza | Portfólio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+    * {
+      box-sizing: border-box;
     }
-    h1 {
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
       color: #4a90e2;
+      margin-bottom: 10px;
+    }
+
+    ul.tech-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    ul.tech-list li {
+      background-color: #e0e0e0;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+
+    .project {
+      border: 1px solid #ddd;
+      padding: 16px;
+      border-radius: 8px;
+      background-color: white;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f2937;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      ul.tech-list {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Olá! Eu sou o Caique 👋</h1>
-  <p>Desenvolvedor web com +6 anos de experiência, apaixonado por tecnologia e soluções com impacto real.</p>
-  <p>🚀 Em construção... Em breve, mais informações aqui.</p>
+  <header>
+    <h1>Caique Souza</h1>
+    <p>Desenvolvedor Web | +6 anos de experiência | Presidente Prudente - SP</p>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>👋 Sobre mim</h2>
+      <p>
+        Sou um desenvolvedor apaixonado por resolver problemas reais com tecnologia. Tenho experiência com PHP, JavaScript, PostgreSQL, Docker e atualmente lidero uma equipe de desenvolvimento. Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente.
+      </p>
+    </section>
+
+    <section id="stack">
+      <h2>🛠️ Stack Principal</h2>
+      <ul class="tech-list">
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PostgreSQL</li>
+        <li>Docker</li>
+        <li>Linux</li>
+      </ul>
+
+      <h3 style="margin-top: 20px;">🚀 Experiência adicional com:</h3>
+      <ul class="tech-list">
+        <li>React</li>
+        <li>Node.js</li>
+        <li>NestJS</li>
+        <li>Next.js</li>
+        <li>Firebase</li>
+        <li>AWS</li>
+        <li>MySQL</li>
+        <li>Python</li>
+        <li>OracleDB</li>
+        <li>Firebird</li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2>📂 Projetos</h2>
+
+      <div class="project">
+        <h3>Vendix</h3>
+        <p>Sistema de vendas simples para pequenos empreendedores, com controle de produtos, clientes e relatórios básicos.</p>
+        <p><em>Em desenvolvimento.</em></p>
+      </div>
+
+      <!-- Adicione mais projetos aqui -->
+    </section>
+
+    <section id="contato">
+      <h2>📬 Contato</h2>
+      <p>📧 <a href="mailto:cs.rib8@gmail.com">cs.rib8@gmail.com</a></p>
+      <p>🔗 <a href="https://github.com/osouzacaique" target="_blank">GitHub</a></p>
+      <p>🔗 <a href="LINK-DO-PORTFOLIO-AQUI" target="_blank">Portfólio completo</a> (em breve)</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Caique Souza. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
