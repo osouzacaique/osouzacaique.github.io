@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Caique Souza - Desenvolvedor Full Stack com +6 anos de experiência em PHP, JavaScript e tecnologias cloud."
+      content="Caique Souza - Tech Lead & Desenvolvedor Full Stack com +6 anos de experiência em PHP, JavaScript e tecnologias cloud."
     />
     <meta
       name="keywords"
-      content="desenvolvedor, full stack, PHP, JavaScript, React, Node.js, portfolio"
+      content="desenvolvedor, full stack, PHP, JavaScript, React, Node.js, portfolio, tech lead"
     />
     <meta name="author" content="Caique Souza" />
     <title>Caique Souza | Portfólio</title>
@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://caiquesr.dev/" />
     <meta
       property="og:title"
-      content="Caique Souza | Desenvolvedor Full Stack"
+      content="Caique Souza | Tech Lead & Full Stack Developer"
     />
     <meta
       property="og:description"
@@ -30,7 +30,7 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:title"
-      content="Caique Souza | Desenvolvedor Full Stack"
+      content="Caique Souza | Tech Lead & Full Stack Developer"
     />
     <meta
       property="twitter:description"
@@ -41,7 +41,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800&display=swap"
       rel="stylesheet"
     />
 
@@ -61,14 +61,19 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress"></div>
+
     <!-- Navegação -->
     <nav id="navbar">
       <div class="nav-container">
         <div class="logo">
           <span class="logo-icon">
-            <i class="fas fa-code"></i>
+            <i class="fas fa-rocket"></i>
           </span>
-          <span class="logo-text">Caique<span class="accent">Souza</span></span>
+          <span class="logo-text">
+            &lt; \ c <span class="accent">s </span>r &gt;</span
+          >
         </div>
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#home" class="nav-link active">Início</a></li>
@@ -87,18 +92,26 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+      <!-- Background orbs -->
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+
       <div id="particles-js"></div>
+
       <div class="hero-container">
-        <div
-          class="hero-content"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          <h1>Meu Portifólio</h1>
-          <p class="subtitle typing-effect">Desenvolvedor Full Stack</p>
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="900">
+          <!-- Availability badge -->
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            Disponível para projetos
+          </div>
+
+          <h1><span class="name-gradient">Caique</span> Souza</h1>
+          <p class="subtitle typing-effect">Tech Lead & Full Stack Developer</p>
           <p class="description">
-            +5 anos de experiência criando soluções web modernas e escaláveis.
-            Especialista em PHP, JavaScript e tecnologias cloud.
+            +6 anos criando soluções web modernas e escaláveis. Especialista em
+            PHP, JavaScript e tecnologias cloud.
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">
@@ -111,11 +124,12 @@
             </a>
           </div>
         </div>
+
         <div
           class="hero-image"
           data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-delay="200"
+          data-aos-duration="900"
+          data-aos-delay="150"
         >
           <div class="profile-card">
             <div class="profile-image">
@@ -159,6 +173,14 @@
           </div>
         </div>
       </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <span>scroll</span>
+        <div class="scroll-indicator-arrow">
+          <i class="fas fa-chevron-down" style="font-size: 0.6rem"></i>
+        </div>
+      </div>
     </section>
 
     <!-- Sobre -->
@@ -166,44 +188,85 @@
       <div class="container">
         <div class="section-title" data-aos="fade-up">
           <h2>Sobre Mim</h2>
-          <p>Conheça mais sobre minha trajetória e experiências</p>
+          <p>Trajetória, experiências e paixão por tecnologia</p>
         </div>
         <div class="about-content">
-          <div class="about-text" data-aos="fade-right" data-aos-delay="200">
-            <p>
-              Sou um desenvolvedor apaixonado por resolver problemas reais com
-              tecnologia. Com mais de 5 anos de experiência, atualmente lidero
-              uma equipe de desenvolvimento e tenho expertise em criar soluções
-              web robustas e escaláveis.
-            </p>
-            <p>
-              Minha jornada começou com curiosidade sobre como as coisas
-              funcionam e evoluiu para uma carreira focada em inovação e
-              excelência técnica. Estou sempre em busca de novos desafios e
-              oportunidades para crescer profissionalmente.
-            </p>
-            <p>
-              Localizado em Presidente Prudente - SP, trabalho tanto com equipes
-              locais quanto remotas, sempre mantendo o foco na qualidade e na
-              entrega de valor.
-            </p>
+          <div class="about-left" data-aos="fade-right" data-aos-delay="100">
+            <div class="about-intro">
+              <p>
+                Sou um desenvolvedor apaixonado por resolver problemas reais com
+                tecnologia. Com mais de 6 anos de experiência, atualmente lidero
+                uma equipe de desenvolvimento com expertise em soluções web
+                robustas e escaláveis.
+              </p>
+              <p>
+                Localizado em Presidente Prudente - SP, trabalho com equipes
+                locais e remotas, sempre focado na qualidade e na entrega de
+                valor real para o negócio.
+              </p>
+            </div>
+
+            <!-- Career Timeline -->
+            <div class="timeline" data-aos="fade-right" data-aos-delay="200">
+              <div class="timeline-item">
+                <div class="timeline-year">2023 — Atual</div>
+                <div class="timeline-role">
+                  Tech Lead & Full Stack Developer
+                </div>
+                <div class="timeline-desc">
+                  Liderança técnica de equipe, arquitetura de sistemas e
+                  desenvolvimento de soluções enterprise.
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2021 — 2023</div>
+                <div class="timeline-role">Senior Full Stack Developer</div>
+                <div class="timeline-desc">
+                  Desenvolvimento de sistemas BI, APIs RESTful e integrações com
+                  múltiplos bancos de dados.
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2019 — 2021</div>
+                <div class="timeline-role">Full Stack Developer</div>
+                <div class="timeline-desc">
+                  Construção de aplicações web com PHP, JavaScript e primeiros
+                  passos com React e Node.js.
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2018</div>
+                <div class="timeline-role">Início da jornada</div>
+                <div class="timeline-desc">
+                  Primeiros projetos, aprendizado constante e descoberta da
+                  paixão por criar soluções digitais.
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="about-stats" data-aos="fade-left" data-aos-delay="400">
-            <div class="stat-card" data-aos="zoom-in" data-aos-delay="500">
-              <span class="stat-number">5</span>
-              <span class="stat-label">Anos de Experiência</span>
-            </div>
-            <div class="stat-card" data-aos="zoom-in" data-aos-delay="600">
-              <span class="stat-number">30</span>
-              <span class="stat-label">Projetos Concluídos</span>
-            </div>
-            <div class="stat-card" data-aos="zoom-in" data-aos-delay="700">
-              <span class="stat-number">15</span>
-              <span class="stat-label">Tecnologias</span>
-            </div>
-            <div class="stat-card" data-aos="zoom-in" data-aos-delay="800">
-              <span class="stat-number">Tech</span>
-              <span class="stat-label">Lead</span>
+
+          <div class="about-right" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-stats">
+              <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                <span class="stat-icon">🚀</span>
+                <span class="stat-number" data-target="6">0</span>
+                <span class="stat-label">Anos de Experiência</span>
+              </div>
+              <div class="stat-card" data-aos="zoom-in" data-aos-delay="500">
+                <span class="stat-icon">✅</span>
+                <span class="stat-number" data-target="30">0</span>
+                <span class="stat-label">Projetos Entregues</span>
+              </div>
+              <div class="stat-card" data-aos="zoom-in" data-aos-delay="600">
+                <span class="stat-icon">⚡</span>
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">Tecnologias</span>
+              </div>
+              <div class="stat-card" data-aos="zoom-in" data-aos-delay="700">
+                <span class="stat-icon">👑</span>
+                <span class="stat-number" data-only-text="true">Tech</span>
+                <span class="stat-label">Lead</span>
+              </div>
             </div>
           </div>
         </div>
@@ -219,50 +282,70 @@
         </div>
         <div class="skills-grid">
           <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3>Backend</h3>
+            </div>
             <ul class="tech-list">
-              <li><i class="fab fa-php"></i> PHP</li>
-              <li><i class="fab fa-node-js"></i> Node.js</li>
-              <li><i class="fas fa-code"></i> NestJS</li>
-              <li><i class="fab fa-python"></i> Python</li>
-              <li><i class="fas fa-exchange-alt"></i> REST APIs</li>
+              <li><i class="fab fa-php"></i><span>PHP</span></li>
+              <li><i class="fab fa-node-js"></i><span>Node.js</span></li>
+              <li><i class="fas fa-n"></i><span>NestJS</span></li>
+              <li><i class="fab fa-python"></i><span>Python</span></li>
+              <li><i class="fas fa-exchange-alt"></i><span>REST APIs</span></li>
             </ul>
           </div>
 
           <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-            <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3>Frontend</h3>
+            </div>
             <ul class="tech-list">
-              <li><i class="fab fa-js-square"></i> JavaScript</li>
-              <li><i class="fab fa-react"></i> React</li>
-              <li><i class="fas fa-layer-group"></i> Next.js</li>
-              <li><i class="fab fa-html5"></i> HTML5</li>
-              <li><i class="fab fa-css3-alt"></i> CSS3</li>
-              <li><i class="fas fa-code"></i> TypeScript</li>
+              <li><i class="fab fa-js-square"></i><span>JavaScript</span></li>
+              <li><i class="fab fa-react"></i><span>React</span></li>
+              <li><i class="fas fa-layer-group"></i><span>Next.js</span></li>
+              <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+              <li><i class="fab fa-css3-alt"></i><span>CSS3</span></li>
+              <li><i class="fas fa-code"></i><span>TypeScript</span></li>
             </ul>
           </div>
 
           <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-            <h3><i class="fas fa-database"></i> Banco de Dados</h3>
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Banco de Dados</h3>
+            </div>
             <ul class="tech-list">
-              <li><i class="fas fa-database"></i> PostgreSQL</li>
-              <li><i class="fas fa-database"></i> MySQL</li>
-              <li><i class="fas fa-database"></i> SQL Server</li>
-              <li><i class="fas fa-table"></i> OracleDB</li>
-              <li><i class="fas fa-fire"></i> Firebird</li>
-              <li><i class="fab fa-google"></i> Firebase</li>
+              <li><i class="fas fa-database"></i><span>PostgreSQL</span></li>
+              <li><i class="fas fa-database"></i><span>MySQL</span></li>
+              <li><i class="fas fa-database"></i><span>SQL Server</span></li>
+              <li><i class="fas fa-table"></i><span>OracleDB</span></li>
+              <li><i class="fas fa-fire"></i><span>Firebird</span></li>
+              <li><i class="fab fa-google"></i><span>Firebase</span></li>
             </ul>
           </div>
 
           <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-            <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3>Cloud & DevOps</h3>
+            </div>
             <ul class="tech-list">
-              <li><i class="fab fa-docker"></i> Docker</li>
-              <li><i class="fab fa-aws"></i> AWS</li>
-              <li><i class="fab fa-linux"></i> Linux</li>
-              <li><i class="fas fa-sync-alt"></i> CI/CD</li>
-              <li><i class="fab fa-git-alt"></i> Git</li>
-              <li><i class="fas fa-server"></i> Nginx</li>
-              <li><i class="fas fa-server"></i> Apache</li>
+              <li><i class="fab fa-docker"></i><span>Docker</span></li>
+              <li><i class="fab fa-aws"></i><span>AWS</span></li>
+              <li><i class="fab fa-linux"></i><span>Linux</span></li>
+              <li><i class="fas fa-sync-alt"></i><span>CI/CD</span></li>
+              <li><i class="fab fa-git-alt"></i><span>Git</span></li>
+              <li><i class="fas fa-server"></i><span>Nginx</span></li>
+              <li><i class="fas fa-server"></i><span>Apache</span></li>
             </ul>
           </div>
         </div>
@@ -278,133 +361,120 @@
         </div>
         <div class="projects-grid">
           <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="project-header">
-              <h3 class="project-title">Vendix</h3>
-              <span class="project-status">Em Desenvolvimento</span>
-            </div>
-            <p class="project-description">
-              Sistema de vendas completo para pequenos empreendedores, com
-              controle de produtos, clientes, vendas e relatórios detalhados.
-              Interface moderna e intuitiva.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Node</span>
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">Docker</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://vendix-frontend.onrender.com/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i>
-                Demo
-              </a>
-              <!-- <a
-                href="https://github.com/osouzacaique"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fab fa-github"></i>
-                Código
-              </a> -->
+            <div class="project-preview project-preview-1"></div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Vendix</h3>
+                <span class="project-status project-status-dev"
+                  >Em Desenvolvimento</span
+                >
+              </div>
+              <p class="project-description">
+                Sistema de vendas completo para pequenos empreendedores, com
+                controle de produtos, clientes, vendas e relatórios detalhados.
+                Interface moderna e intuitiva.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Node</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://vendix-frontend.onrender.com/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-header">
-              <h3 class="project-title">Move.it</h3>
-              <span class="project-status">Concluído</span>
-            </div>
-            <p class="project-description">
-              Sistema para controle de foco (temporizador pomodoro) e incentivo
-              à melhores práticas de saúde, como pausas ativas e exercícios,
-              utilizando conceitos de "gameficação".
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Typescript</span>
-              <span class="tech-tag">CSS</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://moveit-orcin-one.vercel.app/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i>
-                Demo
-              </a>
-              <a
-                href="https://github.com/osouzacaique/moveit-next-front-end"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fab fa-github"></i>
-                Código
-              </a>
+            <div class="project-preview project-preview-2"></div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Move.it</h3>
+                <span class="project-status project-status-done"
+                  >Concluído</span
+                >
+              </div>
+              <p class="project-description">
+                Sistema para controle de foco (temporizador pomodoro) e
+                incentivo à melhores práticas de saúde, como pausas ativas e
+                exercícios, utilizando conceitos de gamificação.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://moveit-orcin-one.vercel.app/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+                <a
+                  href="https://github.com/osouzacaique/moveit-next-front-end"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i> Código
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="project-header">
-              <h3 class="project-title">BCBI</h3>
-              <span class="project-status">Projeto de Melhoria Contínua</span>
-            </div>
-            <p class="project-description">
-              Sistema completo de Business Intelligence para análise de dados
-              empresariais, com dashboards interativos, relatórios customizáveis
-              e integração com diversas fontes de dados. Desenvolvido para
-              otimizar a tomada de decisões estratégicas.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">PHP</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">jQuery</span>
-              <span class="tech-tag">Bootstrap</span>
-            </div>
-            <div class="project-links">
-              <!-- <a
-                href="https://github.com/osouzacaique"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fab fa-github"></i>
-                GitHub
-              </a> -->
+            <div class="project-preview project-preview-3"></div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">BCBI</h3>
+                <span class="project-status project-status-wip"
+                  >Melhoria Contínua</span
+                >
+              </div>
+              <p class="project-description">
+                Sistema completo de Business Intelligence para análise de dados
+                empresariais, com dashboards interativos, relatórios
+                customizáveis e integração com diversas fontes de dados.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">jQuery</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-links"></div>
             </div>
           </div>
 
           <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="project-header">
-              <h3 class="project-title">CZPrinter</h3>
-              <span class="project-status">Concluído</span>
-            </div>
-            <p class="project-description">
-              API em Node.js para geração de etiquetas ZPL e impressão nas
-              impressoras térmicas Zebra. Permite integração com sistemas
-              internos para automação de processos.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">NSSM</span>
-              <span class="tech-tag">MySQL</span>
-            </div>
-            <div class="project-links">
-              <!-- <a href="#" class="project-link">
-                <i class="fas fa-external-link-alt"></i>
-                Demo
-              </a>
-              <a
-                href="https://github.com/osouzacaique"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fab fa-github"></i>
-                Código
-              </a> -->
+            <div class="project-preview project-preview-4"></div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">CZPrinter</h3>
+                <span class="project-status project-status-done"
+                  >Concluído</span
+                >
+              </div>
+              <p class="project-description">
+                API em Node.js para geração de etiquetas ZPL e impressão nas
+                impressoras térmicas Zebra. Permite integração com sistemas
+                internos para automação de processos.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">NSSM</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-links"></div>
             </div>
           </div>
         </div>
@@ -421,43 +491,66 @@
         <div class="contact-content-single">
           <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
             <h3>Informações de Contato</h3>
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h4>Email</h4>
-                <a href="mailto:cs.rib8@gmail.com">cs.rib8@gmail.com</a>
+            <div class="contact-items-grid">
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:cs.rib8@gmail.com">cs.rib8@gmail.com</a>
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <i class="fab fa-linkedin"></i>
-              <div>
-                <h4>LinkedIn</h4>
-                <a href="https://linkedin.com/in/osouzacaique" target="_blank"
-                  >linkedin.com/in/osouzacaique</a
-                >
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <a href="https://linkedin.com/in/osouzacaique" target="_blank"
+                    >osouzacaique</a
+                  >
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <i class="fab fa-github"></i>
-              <div>
-                <h4>GitHub</h4>
-                <a href="https://github.com/osouzacaique" target="_blank"
-                  >github.com/osouzacaique</a
-                >
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div>
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/osouzacaique" target="_blank"
+                    >osouzacaique</a
+                  >
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Localização</h4>
-                <p>Presidente Prudente - SP</p>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4>Localização</h4>
+                  <p>Presidente Prudente — SP</p>
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-clock"></i>
-              <div>
-                <h4>Disponibilidade</h4>
-                <p>Segunda à Sexta: 8h às 18h</p>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h4>Disponibilidade</h4>
+                  <p>Seg–Sex, 8h–18h</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div>
+                  <h4>WhatsApp</h4>
+                  <a href="https://wa.me/5518999999999" target="_blank"
+                    >Enviar mensagem</a
+                  >
+                </div>
               </div>
             </div>
 
@@ -510,11 +603,16 @@
           <a href="#contact" class="footer-link">Contato</a>
         </div>
         <p class="footer-text">
-          &copy; 2025 Caique Souza. Todos os direitos reservados.
+          &copy; 2026 Caique Souza. Todos os direitos reservados.
         </p>
         <p class="footer-text">Desenvolvido com ❤️ e muito ☕</p>
       </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Voltar ao topo">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -523,49 +621,33 @@
     <script>
       // Inicializar AOS
       AOS.init({
-        duration: 800,
+        duration: 700,
         easing: "ease-out-cubic",
         once: true,
-        offset: 100,
+        offset: 80,
       });
 
       // Configurar Particles.js
       if (window.particlesJS) {
         particlesJS("particles-js", {
           particles: {
-            number: {
-              value: 80,
-              density: {
-                enable: true,
-                value_area: 800,
-              },
-            },
-            color: {
-              value: "#6366f1",
-            },
-            shape: {
-              type: "circle",
-            },
-            opacity: {
-              value: 0.1,
-              random: false,
-            },
-            size: {
-              value: 3,
-              random: true,
-            },
+            number: { value: 55, density: { enable: true, value_area: 900 } },
+            color: { value: "#8b5cf6" },
+            shape: { type: "circle" },
+            opacity: { value: 0.08, random: true },
+            size: { value: 2.5, random: true },
             line_linked: {
               enable: true,
-              distance: 150,
-              color: "#6366f1",
-              opacity: 0.1,
+              distance: 160,
+              color: "#8b5cf6",
+              opacity: 0.07,
               width: 1,
             },
             move: {
               enable: true,
-              speed: 2,
+              speed: 1.5,
               direction: "none",
-              random: false,
+              random: true,
               straight: false,
               out_mode: "out",
               bounce: false,
@@ -574,40 +656,13 @@
           interactivity: {
             detect_on: "canvas",
             events: {
-              onhover: {
-                enable: true,
-                mode: "repulse",
-              },
-              onclick: {
-                enable: true,
-                mode: "push",
-              },
+              onhover: { enable: true, mode: "repulse" },
+              onclick: { enable: true, mode: "push" },
               resize: true,
             },
             modes: {
-              grab: {
-                distance: 400,
-                line_linked: {
-                  opacity: 1,
-                },
-              },
-              bubble: {
-                distance: 400,
-                size: 40,
-                duration: 2,
-                opacity: 8,
-                speed: 3,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-              push: {
-                particles_nb: 4,
-              },
-              remove: {
-                particles_nb: 2,
-              },
+              repulse: { distance: 120, duration: 0.4 },
+              push: { particles_nb: 3 },
             },
           },
           retina_detect: true,
