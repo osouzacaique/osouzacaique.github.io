@@ -245,11 +245,7 @@ function initTypingEffect() {
   const typingElement = document.querySelector(".typing-effect");
   if (!typingElement) return;
 
-  const texts = [
-    "Desenvolvedor Full Stack",
-    "Líder de Equipe",
-    "Analista de Dados",
-  ];
+  const texts = ["Full Stack Developer", "Tech Lead"];
   let textIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
