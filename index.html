@@ -110,14 +110,18 @@
           <h1><span class="name-gradient">Caique</span> Souza</h1>
           <p class="subtitle typing-effect">Tech Lead & Full Stack Developer</p>
           <p class="description">
-            Desenvolvedor com mais de <strong>8 anos de experiência</strong> na
-            criação de aplicações web, construção de produtos digitais e
-            evolução de sistemas voltados para negócios. Tenho experiência
-            sólida com
-            <strong
-              >PHP, JavaScript, HTML, CSS e bancos de dados relacionais</strong
-            >, além de trabalhar com tecnologias modernas como
-            <strong>React, Node.js e Docker</strong>.
+            Desenvolvedor Full Stack com
+            <strong>mais de 8 anos de experiência</strong> na construção de
+            aplicações web completas, com forte atuação em
+            <strong>frontend moderno</strong> e desenvolvimento de
+            <strong>APIs</strong>. Experiência com
+            <strong>React, Next.js, Node.js e TypeScript</strong>, criando
+            interfaces performáticas e integrações robustas. Atualmente focado
+            em <strong>IA aplicada</strong>, desenvolvendo agentes inteligentes
+            com <strong>OpenCode</strong>, utilizando
+            <strong>MCPs (Pencil, Playwright)</strong> e construindo soluções
+            com <strong>LLM local</strong> para consulta de documentos
+            empresariais.
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">
@@ -330,6 +334,7 @@
               <li><i class="fas fa-n"></i><span>NestJS</span></li>
               <li><i class="fab fa-python"></i><span>Python</span></li>
               <li><i class="fas fa-exchange-alt"></i><span>REST APIs</span></li>
+              <li><i class="fas fa-robot"></i><span>LLM / IA</span></li>
             </ul>
           </div>
 
@@ -382,6 +387,22 @@
               <li><i class="fab fa-git-alt"></i><span>Git</span></li>
               <li><i class="fas fa-server"></i><span>Nginx</span></li>
               <li><i class="fas fa-server"></i><span>Apache</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3>IA & Agentes</h3>
+            </div>
+            <ul class="tech-list">
+              <li><i class="fas fa-brain"></i><span>RAG</span></li>
+              <li><i class="fas fa-terminal"></i><span>OpenCode</span></li>
+              <li><i class="fas fa-plug"></i><span>MCPs</span></li>
+              <li><i class="fas fa-vial"></i><span>Playwright</span></li>
+              <li><i class="fas fa-book"></i><span>Context7</span></li>
             </ul>
           </div>
         </div>
@@ -509,6 +530,76 @@
                 <span class="tech-tag">Node.js</span>
                 <span class="tech-tag">NSSM</span>
                 <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-links"></div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-preview project-preview-5"></div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Agente de IA para Documentos</h3>
+                <span class="project-status project-status-done"
+                  >Concluído</span
+                >
+              </div>
+              <p class="project-description">
+                Sistema com LLM local para consulta inteligente em bases
+                empresariais. Permite busca semântica e respostas contextuais
+                sobre documentos internos da organização.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LLM</span>
+                <span class="tech-tag">RAG</span>
+                <span class="tech-tag">IA</span>
+              </div>
+              <div class="project-links"></div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-preview project-preview-6"></div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Desenvolvimento Agêntico</h3>
+                <span class="project-status project-status-wip">Em Uso</span>
+              </div>
+              <p class="project-description">
+                Utilização de agentes para desenvolvimento com uso do OpenCode,
+                MCPs como Pencil, Playwright e Context7 para automação e
+                aceleração do fluxo de trabalho.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">OpenCode</span>
+                <span class="tech-tag">MCPs</span>
+                <span class="tech-tag">Playwright</span>
+                <span class="tech-tag">Context7</span>
+              </div>
+              <div class="project-links"></div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-preview project-preview-7"></div>
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Falkus</h3>
+                <span class="project-status project-status-wip"
+                  >Melhoria Contínua</span
+                >
+              </div>
+              <p class="project-description">
+                Sistema de ITSM construído do zero com metodologias para uso de
+                IA, utilizando frameworks e tecnologias modernas para gestão
+                completa de serviços de TI.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">IA</span>
+                <span class="tech-tag">ITSM</span>
               </div>
               <div class="project-links"></div>
             </div>
@@ -657,10 +748,11 @@
     <script>
       // Inicializar AOS
       AOS.init({
-        duration: 700,
+        duration: window.innerWidth < 768 ? 500 : 700,
         easing: "ease-out-cubic",
         once: true,
-        offset: 80,
+        offset: window.innerWidth < 768 ? 30 : 80,
+        disable: false,
       });
 
       // Configurar Particles.js

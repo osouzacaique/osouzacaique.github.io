@@ -211,18 +211,16 @@ function initSmoothScroll() {
   });
 }
 
-// Efeito parallax
+// Efeito parallax (desktop only)
 function initParallax() {
+  // Skip parallax on mobile/tablet to prevent section overlap
+  if (window.innerWidth < 768) return;
+
   let ticking = false;
 
   function updateParallax() {
     const scrolled = window.pageYOffset;
-    const hero = document.querySelector(".hero");
     const parallaxElements = document.querySelectorAll(".parallax");
-
-    if (hero) {
-      hero.style.transform = `translateY(${scrolled * 0.2}px)`;
-    }
 
     parallaxElements.forEach((el) => {
       const speed = el.dataset.speed || 0.5;
